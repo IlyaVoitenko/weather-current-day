@@ -1,11 +1,11 @@
 import "./App.css";
-import { useDispatch } from "react-redux";
-import { getDataCurrentWeatherForcast } from "./components/thunk";
-
+import Main from "./components/Main";
 function App() {
-  const dispatch = useDispatch();
-  dispatch(getDataCurrentWeatherForcast());
-  return <div className="App">fssdfsfd</div>;
+  return (
+    <div className="App ">
+      <Main />
+    </div>
+  );
 }
 
 export default App;
